@@ -159,7 +159,7 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/brett blanko.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -232,10 +232,10 @@ header {
     max-width: 650px;
     margin: 0 auto;
     .portfolio-box-caption {
-        color: white;
+        color: black;
         opacity: 0;
         display: block;
-        background: fade(@theme-primary, 90%);
+        background: fade(white, 75%);
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -346,3 +346,24 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: @theme-dark;
 }
+
+#zutaten {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    .background-cover;
+    background-position: center;
+    background-image: url('../img/brett blanko.jpg');
+    color: white;
+    text-align: center;
+}
+
+.zutaten {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    div {
+      align-self: center;
+    }
+}
+

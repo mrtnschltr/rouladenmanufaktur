@@ -3,6 +3,14 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        connect: {
+            server: {
+              options: {
+                  port: 9000,
+                  keepalive: true,
+              }
+            }
+        },
         uglify: {
             main: {
                 src: 'js/<%= pkg.name %>.js',
@@ -45,6 +53,9 @@ module.exports = function(grunt) {
             }
         },
         watch: {
+            options: {
+                livereload: true,
+            },
             scripts: {
                 files: ['js/<%= pkg.name %>.js'],
                 tasks: ['uglify'],
@@ -67,6 +78,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
     // Default task(s).
     grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
