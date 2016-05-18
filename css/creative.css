@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Kalam', cursive;
 }
 p {
   font-size: 16px;
@@ -144,7 +144,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/brett blanko.jpg');
+  background-image: url('../img/557380655.jpg');
   text-align: center;
   color: white;
 }
@@ -409,11 +409,24 @@ body {
   color: white;
   text-align: center;
 }
+/*
 .zutaten {
-  text-align: left;
-  display: flex;
-  justify-content: center;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    div {
+      align-self: center;
+    }
 }
-.zutaten div {
-  align-self: center;
+*/
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+.facts li {
+  margin-top: 20px;
+}
+.glass {
+  padding: 20px 0;
 }
