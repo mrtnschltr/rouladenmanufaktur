@@ -7,9 +7,13 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
-  border-color: #669933;
-  border-width: 3px;
-  max-width: 50px;
+  display: none;
+  /*border-color: #669933;
+  border-width: 2px;
+  max-width: 100px;
+  border-radius: 1px;
+  margin-top: 0;
+  margin-bottom: 0;*/
 }
 hr.light {
   border-color: white;
