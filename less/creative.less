@@ -13,9 +13,12 @@ body {
 }
 
 hr {
+    display: none;
+    /*
     border-color: @theme-primary;
     border-width: 3px;
     max-width: 50px;
+    */
 }
 
 hr.light {
@@ -41,6 +44,17 @@ h6 {
     .handwritten;
 }
 
+h1 {
+    letter-spacing: 4px;
+}
+
+h2,h3 {
+    letter-spacing: 1.5px;
+    .section-heading {
+        margin-bottom: 40px;
+    }
+}
+
 p {
     font-size: 16px;
     line-height: 1.5;
@@ -61,7 +75,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 aside {
@@ -169,11 +183,19 @@ header {
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
+            .btn {
+                margin-top: 50px;
+            }
             h1 {
                 font-weight: 700;
                 text-transform: uppercase;
+                /*
                 margin-top: 0;
                 margin-bottom: 0;
+                */
+            }
+            h2 {
+                margin: 0;
             }
             hr {
                 margin: 30px auto;
@@ -212,9 +234,11 @@ header {
 
 // Sections
 
+/*
 .section-heading {
     margin-top: 0;
 }
+*/
 
 .service-box {
     max-width: 400px;
@@ -383,3 +407,12 @@ body {
 .glass {
   padding: 20px 0;
 }
+
+.row.mission--text {
+  margin-top: 50px;
+}
+
+.caption h3 {
+  margin: 10px 0px 20px;
+}
+.
